@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>com.github.tram9.autotranslate</id>
+    <name>AutoTranslate Strings V2</name>
+    <vendor>tram9</vendor>
+    <description><![CDATA[
+        <p><b>AutoTranslate Strings V2</b> for Android Studio and IntelliJ IDEA.</p>
+        <ul>
+            <li>Automatically detects Android locale folders under <code>res/values-*</code>.</li>
+            <li>No hard-coded target-language list.</li>
+            <li>Translates only missing strings or refreshes all strings.</li>
+            <li>Protects Android format placeholders.</li>
+            <li>Skips resources marked <code>translatable="false"</code>.</li>
+        </ul>
+    ]]></description>
+    <depends>com.intellij.modules.platform</depends>
+    <actions>
+        <action
+            id="AutoTranslateStrings"
+            class="com.github.tram9.autotranslate.toolWindow.AutoTranslateAction"
+            text="Auto Translate Strings"
+            description="Translate Android strings into automatically detected locale folders"
+            icon="AllIcons.Actions.Refresh">
+            <add-to-group anchor="last" group-id="ProjectViewPopupMenu" />
+        </action>
+    </actions>
+</idea-plugin>
