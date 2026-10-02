@@ -22,13 +22,14 @@ Android Studio / IntelliJ IDEA plugin for automatically translating Android `str
 
 ## Build
 
+Use a local Gradle installation or import the project into Android Studio / IntelliJ IDEA:
+
 ```bash
-./gradlew build
+gradle build
 ```
 
 ## Tech
 
 - Kotlin
 - IntelliJ Platform SDK
-- Google Translate endpoint via a pluggable `TranslationProvider`
-
+- Google Translate endpoint behind a pluggable `TranslationProvider`
